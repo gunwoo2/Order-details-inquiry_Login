@@ -1,0 +1,42 @@
+<mvc:View controllerName="sync.ea.orderlogin.controller.Login"
+     xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+
+    <Page title="주문내역 조회" id="loginpage" showNavButton="true" navButtonPress="onNavBack" class="background-page" showHeader="false" enableScrolling="false">
+        <content>
+            <VBox class="sapMCrslCustom sapMCrsl sapUiNoMargin" style="position: relative; height: 100vh; width: 100vw;">
+                <!-- 전체 화면에 배경 영상 추가 -->
+                <core:HTML id="idHTML" class="fullScreenHTML" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"/>
+
+                <!-- 로그인 정보 섹션 -->
+                <VBox class="loginContainer" alignItems="Center">
+                    <Text text="" class="sapUiTinyMargin"/>                
+                    <Text text="Login" class="loginTitle font-face" />
+                    <Text text="" class="sapUiTinyMargin"/>
+                    <VBox class="sapUiSmallMarginTop" alignItems="Center" justifyContent="Center">
+                        <Title text="핸드폰 번호를 입력해 주세요." level="H1" titleStyle="Bold" class="titleStyle loginText font-face3"/>
+                        <Title text="  ⚠ 특수문자 없이 숫자만 입력해주세요. " level="H1" titleStyle="Bold" class="titleStyle loginText2 font-face3"/>
+                        
+                    </VBox>
+                    <Text text="" class="sapUiSmallMargin"/>
+                    <Panel class="sapUiSmallMarginTop sapMPanel sapUiPanelBase font-face3" headerToolbarClass="smallHeader">
+                        <VBox class="sapUiSmallMargin">
+                            <HBox class="sapUiSmallMarginTop" alignItems="Center">
+                                <Label text="핸드폰 번호 :" class="sapUiSmallMarginEnd sapMPanel loginText font-face3" design="Bold"/>
+                                <Input id="TelnoInput" type="Tel" placeholder="핸드폰 번호 입력"/>
+                            </HBox>
+                            <Text text="" class="sapUiTinyMargin"/>
+                            <Text text="" class="sapUiTinyMargin"/>
+                            <HBox class="sapUiSmallMarginTop" justifyContent="Center">
+                                <Button text="주문 조회" press="onSearch" icon="sap-icon://search"/>
+                            </HBox>
+                        </VBox>
+                    </Panel>
+                </VBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

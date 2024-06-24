@@ -1,0 +1,84 @@
+    .loginTitle {
+        font-size: 48px; /* 원하는 크기로 설정 */
+        font-weight: bold;
+        margin-top: 20px; /* 원하는 여백으로 설정 */
+        color: white
+    }
+
+    .smallHeader .sapMPanelHdr {
+        font-size: 0.875rem; /* 원하는 크기로 조정 */
+        color: white
+    }
+
+    .loginText {
+        color: white;
+        font-weight: 700;
+        h3 {
+            color: rgb(255, 255, 255);
+            font-size: large;
+        }
+    }
+
+    .sapMPanel .sapMPanelHdr {
+        color: white !important;
+        font-weight: 900;
+        background-color: rgba(255, 255, 255, 0.0);
+        border: 0px solid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loginText2 {
+        font-size: 0.85rem; /* 원하는 크기로 조정 */
+        color: orange;
+    }
+
+    .verticalLayoutWithBackground6 {
+        background-image: url('https://i.ibb.co/0ccwwbC/banner.png');
+        background-size: cover; /* 배경 이미지를 컨테이너에 맞게 조정합니다 */
+        background-position: center; /* 배경 이미지를 중앙에 위치시킵니다 */
+        background-repeat: no-repeat; /* 배경 이미지가 반복되지 않도록 설정합니다 */
+        position: relative; /* 부모 요소를 상대적으로 위치시킵니다 */
+        cursor: pointer; /* 마우스 커서를 포인터로 변경합니다 */
+        overflow: hidden; /* 내부 요소가 벗어날 경우 가리도록 설정합니다 */
+        transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+        background-color: #000;
+    }
+
+    .fullScreenHTML {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .loginContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.5); /* Optional: to make the background slightly transparent */
+        width: 100%;
+        height: 100%;
+    }
+
+    .sapMPanel.sapUiPanelBase {
+        border-radius: 20px;
+        padding: 1rem; /* 원하는 패딩 값으로 조정하세요 */
+    }
+
+    .font-face3 {
+        font-family: 'Pretendard-Regular', sans-serif;
+        font-style: normal;
+    }
+
+    .font-face {
+        font-family: 'Y_Spotlight', sans-serif;
+    }
